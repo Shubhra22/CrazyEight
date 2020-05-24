@@ -12,15 +12,6 @@ public class Main
     public static HashMap<Integer,String>  cardId_name;
     public static void main(String[] args)
     {
-
-        // 2-5 playeers
-        // get rid of your cards
-        // each start with 7 cards
-
-        // there is a pile card in the middle, starts with one open card from the dec
-
-	    // write your code here
-
         sc = new Scanner(System.in);
         rand = new Random();
 
