@@ -12,9 +12,9 @@ public class Main
     public static HashMap<Integer,String>  cardId_name;
     public static void main(String[] args)
     {
+
         sc = new Scanner(System.in);
         rand = new Random();
-
         cardId_name = new HashMap<Integer, String>();
         cardId_name.put(2,"2");
         cardId_name.put(3,"3");

@@ -3,7 +3,7 @@ package com.company;
 public class Card
 {
     // create a varibale of type int named as number
-    private int number;
+    public int number;
     // create an enum with four different kinds of card name
     // Hearts, Diamonds, Spades, Clubs
     public enum Suit

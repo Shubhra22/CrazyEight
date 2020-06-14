@@ -7,6 +7,7 @@ import java.util.Stack;
 public class Game
 {
     public static Stack<Card> deck = new Stack<Card>();
+    public static Stack<Card> pile = new Stack<Card>();
     List<Player> players;
     int nCardsPerPlayer = 7;
     // Another constructor
@@ -16,10 +17,19 @@ public class Game
         ShuffleDeck();
 
         players = new ArrayList<Player>();
-        players.add(new Player("Hubert"));
-        players.add(new Player("Harrison"));
+        players.add(new HumanPlayer("Hubert"));
+        players.add(new AIPlayer("AI"));
 
         HandOutCards();
+        pile.push(deck.pop());
+        while (true)
+        {
+            for (Player p: players)
+            {
+                p.DoTurn();
+            }
+        }
+
     }
 
     void CreateDeck()
@@ -58,4 +68,6 @@ public class Game
            }
         }
     }
+
+
 }
